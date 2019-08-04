@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Form Validation</title>
 </head>
 <body>
+
 	<script type="text/javascript" src="script.js"></script>
-	<form>
-		<label>Email</label>
-		<input type="text" name="email" id="txtemail"><br>
-		<label>Username</label>
-		<input type="text" name="Username" id="txtusername"><br>
-		<label>password</label>
-		<input type="password" name="password" id="txtpassword"><br>
-		<button type="submit" name="submit" value="submit" onclick="validateEmptyValues()">submit</button>
+	<!-- use ssavr -->
+	<form action="post" name="myform">
+		<table border="2" bgcolor="green" align="center" width="200" height="100">
+	<tr>
+		<td>Name</td>
+		<td><input placeholder=" username" type="text" name="Username" id="txtusername"></td>
+	</tr>
+	<tr>
+		<td>Email</td>
+		<td><input placeholder="asd.@gmail.com" type="text" name="email" id="txtemail"></td>
+	</tr>
+	<tr>
+		<td>Password</td>
+		<td><input placeholder=" password" type="password" name="password" id="txtpassword"></td>
+	</tr>
+	<tr>
+		<td>
+			country
+		</td>
+		<td>
+			<select name="country">
+				<option value="-1" selected="">[choose your]</option>
+				<option value="1">Usa</option>
+				<option value="2">Nepal</option>
+				<option value="3">india</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td> 1st col</td>
+		<td> 2nd col</td>
+	</tr>
+	<tr >
+	<!-- 	<td>
+		
+		</td> -->
+		<td colspan="2" align="center">
+			<button type="submit" name="submit" value="submit" onclick="validateEmptyValues()">submit</button>
+		</td>
+	</tr>
+</table>
 	</form>
 	
 </body>
